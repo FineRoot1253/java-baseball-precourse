@@ -10,7 +10,7 @@ import static org.assertj.core.api.Assertions.*;
 class StringTest {
     @Test
     @DisplayName("splitTest:[success]")
-    void splitTest(){
+    void splitTest() {
         //given
         String str1 = "1,2";
         String str2 = "1";
@@ -18,13 +18,13 @@ class StringTest {
         String[] str1Result = str1.split(",");
         String[] str2Result = str2.split(",");
         //then
-        assertThat(str1Result).contains("1","2").containsExactly("1","2");
+        assertThat(str1Result).contains("1", "2").containsExactly("1", "2");
         assertThat(str2Result).contains("1").containsExactly("1");
     }
 
     @Test
     @DisplayName("substringTest:[success]")
-    void substringTest(){
+    void substringTest() {
         //given
         String str1 = "(1,2)";
         //when
@@ -35,11 +35,11 @@ class StringTest {
 
     @Test
     @DisplayName("charAtTest:[success]")
-    void charAtTest(){
+    void charAtTest() {
         //given
         String str1 = "abc";
         // when & then
-        assertThatThrownBy(()->str1.charAt(4))
+        assertThatThrownBy(() -> str1.charAt(4))
                 .isInstanceOf(StringIndexOutOfBoundsException.class)
                 .hasMessageContaining("String index out of range: 4");
     }
