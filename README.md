@@ -16,9 +16,6 @@
  - Service 로직 구현
    - BaseballService
      - 유저 입력 데이터와 컴퓨터가 지닌 데이터와 비교후 리턴
- - Validation 구현
-   - Validator
-     - 유저의 입력을 검사
  - UI 구현
    - BaseView
-     - 입출력 담당
+     - 입출력 구현 및 검사
