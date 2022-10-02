@@ -18,7 +18,7 @@ class SetTest {
     private Set<Integer> numbers;
 
     @BeforeEach
-    void setUp(){
+    void setUp() {
         numbers = new HashSet<>();
         numbers.add(1);
         numbers.add(1);
@@ -28,7 +28,7 @@ class SetTest {
 
     @Test
     @DisplayName("sizeTest:[success]")
-    void sizeTest(){
+    void sizeTest() {
         //when
         int size = numbers.size();
         //then
@@ -37,19 +37,19 @@ class SetTest {
 
 
     @ParameterizedTest
-    @ValueSource(ints = {1,2,3})
+    @ValueSource(ints = {1, 2, 3})
     @DisplayName("containsTest:[success]")
-    void containsTest(int input){
+    void containsTest(int input) {
         //then
         assertTrue(numbers.contains(input));
     }
 
     @ParameterizedTest
-    @CsvSource({"1,true","2,true","2,true","4,false","5,false",})
+    @CsvSource({"1,true", "2,true", "2,true", "4,false", "5,false",})
     @DisplayName("containsTestWithCSV:[success]")
-    void containsTestWithCSV(int input, boolean expected){
+    void containsTestWithCSV(int input, boolean expected) {
         //then
-        assertEquals(numbers.contains(input),expected);
+        assertEquals(numbers.contains(input), expected);
     }
 
 }
