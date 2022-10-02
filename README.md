@@ -5,3 +5,20 @@
 
 ## 과제 제출 과정
 * [과제 제출 방법](https://github.com/next-step/nextstep-docs/tree/master/precourse)
+
+### 구현 기능 목록
+
+ - Model 구현
+   - Request
+     - 유저 입력 데이터 모델
+   - Response
+     - 컴퓨터 출력 데이터 모델
+ - Service 로직 구현
+   - BaseballService
+     - 유저 입력 데이터와 컴퓨터가 지닌 데이터와 비교후 리턴
+ - Validation 구현
+   - Validator
+     - 유저의 입력을 검사
+ - UI 구현
+   - BaseView
+     - 입출력 담당
